@@ -1,0 +1,23 @@
+# Ambiente virtual
+venv/
+*.pyc
+__pycache__/
+
+# Arquivo de configuração sensível
+.env
+
+# Configurações específicas do sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Arquivos gerados por ferramentas IDE
+.idea/
+.vscode/
+*.iml
+
+# Arquivos do sistema operacional
+.pytest_cache/
