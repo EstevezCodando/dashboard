@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à API BackEnd do SAP para Dashboard!</h1>
+        <p>Use os endpoints abaixo para acessar os dados necessários.</p>
+    </header>
+    <main>
+        <h2>Lista de Endpoints</h2>
+        <ul>
+            <li>
+                <strong><a href="/api/lotes" target="_blank">/api/lotes</a></strong>
+                <p>Retorna todos os lotes disponíveis no banco de dados, incluindo seus IDs e nomes.</p>
+            </li>
+            <li>
+                <strong><a href="/api/subfases" target="_blank">/api/subfases</a></strong>
+                <p>Retorna todas as subfases disponíveis no banco de dados, incluindo seus IDs e nomes.</p>
+            </li>
+            <li>
+                <strong><a href="/api/materialized_views" target="_blank">/api/materialized_views</a></strong>
+                <p>Lista todas as materialized views disponíveis no schema <em>acompanhamento</em>.</p>
+            </li>
+            <li>
+                <strong><a href="/api/lotes_subfases" target="_blank">/api/lotes_subfases</a></strong>
+                <p>Retorna os lotes e as subfases associadas, com nomes descritivos e as views correspondentes.</p>
+            </li>
+            <li>
+                <strong><a href="/api/view/{view_name}" target="_blank">/api/view/{view_name}</a></strong>
+                <p>Retorna os dados de uma materialized view específica. Substitua <code>{view_name}</code> pelo nome da view desejada.</p>
+            </li>
+            <li>
+                <strong><a href="/api/dados_views" target="_blank">/api/dados_views</a></strong>
+                <p>Retorna os dados de todas as materialized views no schema <em>acompanhamento</em>.</p>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
